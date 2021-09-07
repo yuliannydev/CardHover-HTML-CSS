@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	/* width: 1000px; */
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img {
+	width: 300px;
+	height: 340px;
+}
+
+.container .card {
+	position: relative;
+
+}
+
+.container .card .face {
+	width: 300px;
+	height: 380px;
+	transition: 0.3s;
+}
+
+.container .card .face.face1 {
+	position: relative;
+	background: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(100px);
+
+}
+
+.container .card:hover .face.face1 {
+	transform: translateX(0);
+}
+
+.container .card .face.face1 .content {
+	transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+	opacity: 1;
+}
+
+.container .card .face.face2 .content {
+	margin: -30px 0;
+}
+
+.container .card .face.face2 .content p {
+	margin: 26px 0;
+}
